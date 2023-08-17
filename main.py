@@ -75,7 +75,7 @@ if change_perc < -5 or change_perc > 5:
     if change_perc > 5:
         change_perc_string = f"🔺{change_perc}%"
     elif change_perc < -5:
-        change_perc_string = f"🔻{change_perc}%"
+        change_perc_string = f"🔻{abs(change_perc)}%"
 
     MESSAGE = (f"Subject: {COMPANY_NAME} \n\n"
                f"{STOCK}{change_perc_string}\n"
